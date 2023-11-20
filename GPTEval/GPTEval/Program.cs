@@ -112,7 +112,7 @@ while (true)
                 Messages = new List<ChatMessage>
                 {
                     new(StaticValues.ChatMessageRoles.User,
-                        $"You are a History teacher helping me with review for the upcoming test. You asked me this question: ```\n{question}\n```I responded with this answer: ```\n{answer}\n``` Verify if this response is correct or not. If the answer is incorrect or only partially right, explain why. Determine whether these answers are right or wrong using your own knowledge, as well as the provided textbook chapter. If the information is not mentioned in the textbook, refer to your own knowledge. Here is the chapter: ```\n{content[chapter - 1]}\n```"),
+                        $"You are a History teacher helping me with review for the upcoming test. You asked me this question: ```\n{question}\n```I responded with this answer: ```\n{answer}\n``` Verify if this response is correct or not. If the answer is incorrect or only partially right, explain why. Explanations do not need to be longer than 30 words. Determine whether these answers are right or wrong using your own knowledge, as well as the provided textbook chapter. If the information is not mentioned in the textbook, refer to your own knowledge. Here is the chapter: ```\n{content[chapter - 1]}\n```"),
                     //new(StaticValues.ChatMessageRoles.User, input),
                 },
                 Model = Models.Gpt_3_5_Turbo_16k,
